@@ -51,3 +51,6 @@ let currentDateELement = document.querySelector("#current-date");
 let currentDate = new Date();
 
 currentDateELement.innerHTML = formatDate(currentDate);
+const greetings = ["Hello sunshine!", "What's the weather like today?", "Ready to check the skies?"];
+const randomGreeting = greetings[Math.floor(Math.random() * greetings.length)];
+document.getElementById('greeting').textContent = randomGreeting;
